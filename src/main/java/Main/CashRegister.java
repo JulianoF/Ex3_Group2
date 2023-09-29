@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Main;
 
-/**
- *
- * @author juliano
- */
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
 public class CashRegister {
+    private final File productFile;
+    
+    public CashRegister() throws FileNotFoundException{
+        this.productFile = new File("ProductList.txt");
+        Scanner lineReader = new Scanner(this.productFile);
+    }
+    
     
 }
