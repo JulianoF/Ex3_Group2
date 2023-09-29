@@ -8,7 +8,7 @@ public class MainTestClass {
         Keyboard testKeyboard = new Keyboard();
         Display testDisplay = new Display();
         
-        //TEST CODE
+        ////////TEST CODE//////////
         System.out.println(System.getProperty("user.dir"));
         CashRegister test = new CashRegister();
         test.getItem(1);
@@ -16,5 +16,7 @@ public class MainTestClass {
         test.getItem(3);
         test.getItem(4);
         
+        testKeyboard.productIDInput();
+        ///////////////////////////
     }
 }

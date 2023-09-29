@@ -5,26 +5,29 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
-public class CashRegister {
+public class CashRegister{
     private final File productFile;
-    Scanner lineReader;
-    //private String[][] db = new String[4][4];
+    private Scanner lineReader;
     
     public CashRegister() throws FileNotFoundException{
         this.productFile = new File("src/main/java/Main/ProductList.txt");
-        lineReader = new Scanner(this.productFile);
+        this.lineReader = null;
 
     }
     
-    public void getItem(int iD){
+    public void getItem(int iD) throws FileNotFoundException{
+        this.lineReader = new Scanner(this.productFile);
         while(lineReader.hasNext()){
             if(lineReader.hasNextInt()){
                 int current = lineReader.nextInt();
+                if(current == iD){
                 String name = lineReader.next();
-                Float price = lineReader.nextFloat();
+                float price = lineReader.nextFloat();
+                ////TEST CODE////
                 System.out.println(current);
                 System.out.println(name);
-                System.out.println(price);
+                System.out.println(price);}
+                ////////////////
             }else{
                 lineReader.next();
             }
