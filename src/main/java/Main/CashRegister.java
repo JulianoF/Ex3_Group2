@@ -23,11 +23,13 @@ public class CashRegister{
                 if(current == iD){
                 String name = lineReader.next();
                 float price = lineReader.nextFloat();
+                
                 ////TEST CODE////
                 System.out.println(current);
                 System.out.println(name);
                 System.out.println(price);}
                 ////////////////
+                
             }else{
                 lineReader.next();
             }

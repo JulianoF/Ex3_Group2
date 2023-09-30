@@ -14,6 +14,8 @@ public class Keyboard {
      
         scan.close();
         
+        //TEST CODE TO SEE IF KEYBOARD CAN CALL CASH REGISTER
+        //AND PROPERLY GET THE SENT ITEM
         CashRegister testCash = new CashRegister();
         testCash.getItem(iD);
     }

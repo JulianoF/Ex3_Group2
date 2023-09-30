@@ -16,7 +16,7 @@ public class MainTestClass {
         test.getItem(3);
         test.getItem(4);
         
-        testKeyboard.productIDInput();
+        testKeyboard.productIDInput(); // THIS LINE WAITS FOR USER INPUT
         ///////////////////////////
     }
 }
