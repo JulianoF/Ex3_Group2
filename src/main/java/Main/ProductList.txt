@@ -2,4 +2,3 @@
 2 Banana 2.00
 3 Pear 1.50
 4 Watermelon 5.00
-5 Cherries 4.00
