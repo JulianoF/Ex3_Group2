@@ -27,11 +27,8 @@ public class CashRegister{
                 String name = lineReader.next();
                 float price = lineReader.nextFloat();
                 hasProduct = true; 
-                ////TEST CODE////
                 productDetails = "Product ID:" + current + "\nProduct: " + 
-                name + "\nPrice $" + price+ "\n";}                
-                ////////////////
-                
+                name + "\nPrice $" + price+ "\n";}                                
             }else{
                 lineReader.next();
             }

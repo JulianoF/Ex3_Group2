@@ -4,18 +4,16 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Keyboard {
-    public Keyboard(){}
+    private Scanner scan;
+    public Keyboard(){
+        scan = null;
+    }
     
     public void productIDInput() throws FileNotFoundException{
-        Scanner scan = new Scanner(System.in);
-        int iD = scan.nextInt();
         
-        //System.out.println(iD); // TEST CODE
-     
-        scan.close();
-        
-        //TEST CODE TO SEE IF KEYBOARD CAN CALL CASH REGISTER
-        //AND PROPERLY GET THE SENT ITEM
+        System.out.print("Please enter the Product ID (Integer): ");
+        scan = new Scanner(System.in);
+        int iD = scan.nextInt();     
         CashRegister testCash = new CashRegister();
         testCash.getItem(iD);
     }

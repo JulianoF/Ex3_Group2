@@ -1,6 +1,7 @@
 package Main;
 
 public class Display {
+    
     public Display(){}
     
     public void notifyDisplay(boolean productDetect) {
